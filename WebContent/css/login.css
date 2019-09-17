@@ -1,0 +1,66 @@
+
+.container {
+    color: #E0BD62;
+    position:relative;
+    width: 100%;
+    height: 100%;
+} 
+.login {
+    top:50%;
+    left:40%; 
+    width:400px;
+    height: 400px;
+    margin: auto;
+    position:absolute;
+}
+.check {
+    font-size: 10px;
+    color:darkgray;
+}
+
+.gray-bk {
+    top:50%;
+    left:30%; 
+    background-color: rgba(255,255,255,0.2); 
+    width:400px; 
+    height: 80%;
+}
+.gray-bk2 {
+    top:50%;
+    left:30%; 
+    background-color: rgba(255,255,255,0.2); 
+    width:400px; 
+    height: 80%;
+}
+.login-button-div {
+    float: right;
+    margin-right: 40px;
+}
+.user-input {
+    -web-kit-appearance:none;/* 去掉默认样式*/
+    -moz-appearance: none; 
+    height:40px;
+    width:200px;
+    background-color: antiquewhite;
+    border-radius:4px;
+    border:1px solid #c8cccf;
+    color:#6a6f77;
+}
+.user-input-div {
+    margin : 30px  
+}
+.checkbox-pw { 
+    font-size:  6px;
+}
+.login-button {
+    display: inline-block;
+    padding: .3em .5em;
+    background-color: #E0BD62;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3em;
+    box-shadow: 0 1px white inset;
+    text-align: center;
+    text-shadow: 0 1px 1px black;
+    color:white;
+    font-weight: bold; 
+}

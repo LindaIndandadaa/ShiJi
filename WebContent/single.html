@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+		<title>详情</title>
+		<head>
+			  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+				<!-- 样式，用了bootstrap的框架，以实现轮播以及方便使用一些其他的特殊样式 -->
+				<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+				<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+				<link href="css/footer.css" rel="stylesheet" type="text/css" media="all" />
+				<!-- jQuery，不用写繁琐的js了 -->
+				<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+		</head> 
+				
+		<!-- 以上为头部，以下是内容部分 -->
+<body onload="init()">
+	<div class="top-tar" >
+				<span>
+						<a class="navbar-link" id="navbar-link" href="#"> <h2>食记</h2></a> 
+				</span> 
+				<span class="login-register" id="login-name">
+						<a href="login.html" class="navbar-link" >登录</a>
+						&nbsp; | &nbsp;	
+						<a href="register.html" class="navbar-link">注册</a>
+				</span>
+    </div>
+	<!-- bootatrap对应的页面元素有特殊的class，导入bootstrap后，使用这些命名class就能得到想要的展示-->
+	 
+		<div class="container">
+			<div class="banner-body-content">
+					<!-- 以下是页面布局的左边部分-->
+					<div class="col-xs-3 banner-body-left">
+							<!-- 这是食记的logo，圆+文字“食记” -->
+						<div class="logo">
+							<h1><a href="index.html">食 <span>记</span></a></h1>
+						</div>
+						<!-- 左上边的链接部分 -->
+						<div class="top-nav">   
+								<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+									<nav class="stroke">
+										<ul class="nav navbar-nav">
+											<li class="active"><a href="index.html"><i class="home"></i>食记</a></li>
+											<li><a href="photos.html" class="hvr-underline-from-left"><i class="picture1"></i>食照</a></li>
+											<li><a href="blog.html" class="hvr-underline-from-left"><i class="edit1"></i>食博</a></li>
+											<li><a href="single.html" class="hvr-underline-from-left"><i class="text-size1"></i>本周精选</a></li>
+											<li><a href="mail.html" class="hvr-underline-from-left"><i class="envelope1"></i>联系我们</a></li>
+										</ul>
+									</nav>
+								</div> 
+						</div>
+					</div>
+					<!-- bootstrap栅格-->
+					<div class="col-xs-9 banner-body-right">
+						<!-- 滑块 -->
+						<div class="wmuSlider example1">
+							<div class="wmuSliderWrapper">
+								<article style="position: absolute; width: 100%; opacity: 0;"> 
+									<div class="banner-wrap">
+										<div class="banner"> 
+										</div>
+									</div>
+								</article>
+								<article style="position: absolute; width: 100%; opacity: 0;"> 
+									<div class="banner-wrap">
+										<div class="banner1"> 
+										</div>
+									</div>
+								</article>
+								<article style="position: absolute; width: 100%; opacity: 0;"> 
+									<div class="banner-wrap">
+										<div class="banner2"> 
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+						<!-- 链接到jQuery -->
+							<script src="js/jquery.wmuSlider.js"></script> 
+								<script>
+								$('.example1').wmuSlider();         
+							 </script> 
+						<!-- 流式布局， -->
+						<div class="banner-bottom">
+							<div class="col-md-4 banner-left"> 
+									<div class="col-xs-3 banner-left1"> 
+									</div>
+								<div class="col-xs-9 banner-right1">
+									<h3>美食</h3>
+								</div>
+								<div class="clearfix"> </div>
+								<p>陕西八大怪，陕西八大怪陕西八大怪陕西八大怪陕西八大怪陕西八大怪陕西八大怪</p>
+							</div>
+							<div class="col-md-4 banner-left">
+								<div class="col-xs-3 banner-left1"> 
+								</div>
+								<div class="col-xs-9 banner-right1">
+									<h3>美酒</h3>
+								</div>
+								<div class="clearfix"> </div>
+								<p>陕西八大怪，陕西八大怪陕西八大怪陕西八大怪陕西八大怪陕西八大怪陕西八大怪.</p>
+							</div>
+							<div class="col-md-4 banner-left">
+								<div class="col-xs-3 banner-left1"> 
+								</div>
+								<div class="col-xs-9 banner-right1">
+									<h3>美物</h3>
+								</div>
+								<div class="clearfix"> </div>
+								<p>陕西八大怪，陕西八大怪陕西八大怪陕西八大怪陕西八大怪陕西八大怪陕西八大怪.</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div> 
+					<!-- 左下 -->
+					<div class="clearfix"> </div>
+					<div class="col-xs-3 banner-body-left">
+						<div class="latest-news">
+							<h2>本周美食探员</h2>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title">
+									<a role="button" id="heada-1" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										李子柒
+									</a>
+									</h4>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+									<div class="panel-body" id="intro-1">
+									个人简介，个人陈词，个人生活观，个人宣言.
+									</div>
+								</div>
+								</div>
+								<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingTwo">
+									<h4 class="panel-title">
+									<a class="collapsed" id="heada-2" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										琳琳琳
+									</a>
+									</h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+									<div class="panel-body" id="intro-2">
+											个人简介，个人陈词，个人生活观，个人宣言.
+									</div>
+								</div>
+								</div>
+								<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<h4 class="panel-title">
+									<a class="collapsed" id="heada-3" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										琳琳
+									</a>
+									</h4>
+								</div>
+								<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+									<div class="panel-body" id="intro-3">
+											个人简介，个人陈词，个人生活观，个人宣言.
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="join">
+								<a href="blog.html">更多</a>
+							</div>
+							<h3>浏览须知</h3>
+							<p>本站内容仅供参考，不收取用户任何费用，请勿轻信一切与金钱交易有关的内容.</p>
+						</div>
+					</div>
+			<div class="col-xs-9 banner-body-right">
+				<!-- single -->
+					<div class="single">
+						<h3 id="blogname" name="blogname">莲蓉层层酥</h3>
+						<div class="single-left">
+							<p>发布于 <span id="blogtime" name="blogtime">2018/12/27</span></p>
+							<img src="images/9.jpg" alt=" " class="img-responsive" />
+						</div>
+						<div class="single-right">
+							<h4 id="blogperson" name="blogperson">探员：小猴子看日记</h4>
+							<p><span id="blogcontent" name="blogcontent">汉族风味传统小吃，既作为小吃应市，也做筵席点心上桌，
+								酥层分明，口感酥软，口味香甜滋润，色泽金黄，形态美观，皮料酥香，馅鲜味美，
+								配备甜羹汤食用宜。原料:面粉、猪脂(微冻)、莲茸馅、白糖粉、清水、精炼油、
+								胭脂红食色素适量、水果罐头适量。制作方法:馅心成形莲茸馅搓成均匀的丸子，
+								糖粉加食红制成胭脂糖。面团调制150克面粉加猪脂，于案板上搓成油酥团，300克面粉加50克猪脂、100克清水，
+								于案板上调制成油水团。制作成形油水面包入油酥面，并酥成生酥面团，搓成圆条，下剂成均匀的圆饼坯，按成圆皮，
+								分别包入馅心，搓圆，按成圆饼状，放置约15分钟，待饼皮变硬，用刀片于饼坯边沿均匀地划一圈至馅心处。
+								成熟平锅置小火上，下精炼油，烧至约60度，依次下入饼坯、炸至起层，浮面，成熟即可。装盘水果点缀，
+								分别撤上胭脂糖。
+							</span></p>
+						</div>
+						<div class="clearfix"> </div>
+						 
+						<div class="tags-cate">
+							<div class="cat-grid">
+								<h4><span>文章</span></h4>
+								<ul>
+									<li><a href="#">榴莲层层酥</a></li>
+									<li><a href="#">牛角包</a></li>
+									<li><a href="#">莲我千层酥</a></li>
+									<li><a href="#">莲千层的酥</a></li>
+									<li><a href="#">莲千顺序层酥</a></li>
+									<li><a href="#">莲 撒千层酥</a></li>
+								</ul>
+							</div>
+							<div class="cat-grid">
+								<h4><span>日期</span></h4>
+								<ul>
+									<li><a href="#">本周</a></li>
+									<li><a href="#">上周</a></li>
+									<li><a href="#">上上周</a></li>
+									<li><a href="#">上个月</a></li> 
+								</ul>
+							</div>
+							<div class="cat-grid">
+								<h4><span>标签 </span> </h4>
+								<div class="top-social-icons">
+										<a href="#">美食</a>
+										<a href="#">美物</a>
+										<a href="#">美酒</a>
+										<br>
+										<a href="#">故事集</a> 
+										<a href="#">预留</a> 
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="three-com">
+							<h3><label> 最优评论 </label></h3>
+							<div class="tom-grid"> 
+								<div class="tom-right">
+									<div class="Hardy">
+										<h4>口齿留香 垂涎三尺 望眼欲穿 食指大动 玉盘珍馐 秀色可餐 饕餮大餐 凤髓龙肝 回味无穷 唇齿留香 色味俱佳 垂涎欲滴 八珍玉食 其味无穷 脍炙人口 </h4> 
+									</div>  
+								</div>
+								<div class="clearfix"> </div>
+							</div> 
+						</div>
+						<div class="leave-comment">
+							<h4>你的评论</h4> 
+							<br>
+							<form name="submit_comment" onsubmit="return checkComment();" method="POST">
+								<input type="text" placeholder="昵称"  name = "用户名" required="required">			           					   
+								<input type="text" placeholder="Email" name = "邮件" required="required"> 
+								<textarea placeholder="您的评论" name = "评论" required="required"> </textarea>
+								<input type="submit" value="Submit" >
+								<div class="clearfix"> </div>
+							</form>
+						</div>
+					</div> 
+			</div>
+			<div class="clearfix"> </div>
+			<!-- 页脚 -->
+			<div class="footer">
+					<hr size="3px" noshade=true >  
+							<div class="container">
+									<div class="mainDiv">
+											<div class="viceDiv_1"> 
+													<ul class="nav-list">
+															<li class="navheader">网站指南</li> 
+															<li><a href="#">成为食主</a></li>
+															<li><a href="#">好吃好玩</a></li> 
+													</ul> 
+											</div>
+											<div class="viceDiv_2">
+													<ul class="nav-list">
+															<li class="navheader">食记保障</li> 
+															<li><a href="#">用户守则</a></li>
+															<li><a href="#">免责声明</a></li>
+															<li><a href="#">链接网站</a></li>
+															<li><a href="#">食记标识</a></li> 
+														</ul> 
+											</div>
+											<div class="viceDiv_3">
+													<ul class="nav-list">
+															<li class="navheader">认证&合作</li> 
+															<li><a href="#">申请认证</a></li>
+															<li><a href="#">企业&食记</a></li>
+															<li><a href="#">开放平台</a></li>
+															<li><a href="#">广告服务</a></li>
+															<li><a href="#">广告代理商</a></li> 
+														</ul> 
+											</div> 
+											<div class="viceDiv_5">
+													<ul class="nav-list">
+														<li class="navheader">联系站主</li>  
+														<img src="images/二维码.jpg" style="width: 100px; height: 100px;">
+												</ul>
+											</div>
+							</div> 
+				</div>
+	 
+			</div>
+		</div>
+		</div> 
+  <!-- bootstrap 运行所需-->
+	<script src="js/bootstrap.js"></script> 
+	<script src="js/single.js"></script>
+	<script src="js/oper.js"></script> 
+	<script src="js/comment.js"></script>
+</body>
+</html>
